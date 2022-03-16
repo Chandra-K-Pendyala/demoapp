@@ -20,7 +20,6 @@ steps:
 
 - task: KubernetesManifest@0
   inputs:
-    action: 'deploy'
+    action: 'delete'
     kubernetesServiceConnection: 'aks-chandra-sock-shop'
     namespace: 'sock-shop'
-    manifests: 'deploy.yaml'
