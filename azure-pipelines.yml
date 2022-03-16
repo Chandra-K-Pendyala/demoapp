@@ -27,6 +27,7 @@ steps:
     arguments: '-f'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
+    outputFormat: 'yaml'
 - task: KubernetesManifest@0
   inputs:
     action: 'deploy'
