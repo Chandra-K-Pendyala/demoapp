@@ -24,6 +24,7 @@ steps:
     kubernetesServiceEndpoint: 'aks-chandra-default'
     namespace: 'sock-shop'
     command: 'create'
+    arguments: '-f'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
 - task: KubernetesManifest@0
