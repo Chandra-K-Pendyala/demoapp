@@ -23,11 +23,9 @@ steps:
     connectionType: 'Kubernetes Service Connection'
     kubernetesServiceEndpoint: 'aks-chandra-default'
     namespace: 'sock-shop'
-    command: 'apply'
-    arguments: '-f'
+    command: 'create'
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
-    outputFormat: 'yaml'
 - task: KubernetesManifest@0
   inputs:
     action: 'deploy'
