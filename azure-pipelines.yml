@@ -22,4 +22,5 @@ steps:
   inputs:
     action: 'deploy'
     kubernetesServiceConnection: 'aks-chandra-default'
+    namespace: 'sock-shop'
     manifests: '*.yaml'
