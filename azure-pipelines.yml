@@ -21,7 +21,7 @@ steps:
 - task: Kubernetes@1
   inputs:
     connectionType: 'Kubernetes Service Connection'
-    kubernetesServiceEndpoint: 'sock-shop-sock-shop'
+    kubernetesServiceEndpoint: 'kube'
     namespace: 'sock-shop'
     command: 'apply'
     arguments: '-f deploy.yaml'
